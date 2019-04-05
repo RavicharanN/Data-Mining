@@ -23,7 +23,7 @@ void setprint(itemset S)
 }
 struct node
 {
-	map<int,node*> next;
+	map <int,node*> next;
 	node* back;
 	int value;
 	int counter;

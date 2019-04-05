@@ -1,4 +1,4 @@
-from MyDecisionTree import Node, id3, c45
+from dec_tree import Node, id3, c45
 
 def generate_tree(data, attrs, method):
     flag = True
@@ -38,6 +38,7 @@ def load_data(file):
 def main():
     data, cols = load_data('play.csv')
     attrs = range(len(data[0])-1)
+    print(attrs)
     root = generate_tree(data, attrs, id3)
     # import pdb; pdb.set_trace()
     root.print_tree(cols)
